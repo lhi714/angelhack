@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/howtouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="25sp"
+            android:text="how to use CHECKLIST" />
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/checklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_margin="10dp"
+            android:text="CHECKLIST" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allergies are severe" />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anemia is severe" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I feel fatigue easily" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am constipated" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have diarrhea" />
+
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have a bad breath" />
+        <RadioButton
+            android:id="@+id/radio7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Athlete's foot is severe" />
+
+        <RadioButton
+            android:id="@+id/radio8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The skin is rough and the complexion is dark" />
+
+        <RadioButton
+            android:id="@+id/radio9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eyes are tired" />
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hangover is severe" />
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heavy cold hands and feet" />
+        <RadioButton
+            android:id="@+id/radio12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I'm a smoker" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
