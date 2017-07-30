@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="dot_active">#000000</color>
+    <color name="dot_active">#405d27</color>
     <color name="dot_inactive">#cccccc</color>
+
+    <color name="textcolor_intro">#ffffff</color>
 </resources>
