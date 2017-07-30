@@ -63,17 +63,17 @@ public class CustomListActivity extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(int i=0; i<4; i++) {
                     for (DataSnapshot messageData : dataSnapshot.getChildren()) {
-                        if (Indigrent[result.get(i)]==messageData.getKey().toString()) {
+
+                        /* (str==messageData.getKey().toString()) {
                             CustomListItem clitems1 = new CustomListItem();
                             clitems1.setIcon(R.drawable.ic_launcher_round);
                             clitems1.setName(messageData.getKey().toString());
                             clitems1.setContents(messageData.getValue().toString());
                             clitems.add(clitems1);
-                        }
+                        }*/
                     }
-                }
+
                     adapter.notifyDataSetChanged();
                     listview.setSelection(adapter.getCount() - 1);
 
