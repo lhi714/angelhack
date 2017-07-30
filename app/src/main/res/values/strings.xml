@@ -14,4 +14,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_add_popup_window">AddPopupWindow</string>
+    <string name="google_app_id" templateMergeStrategy="preserve" translatable="false">1:690761310894:android:3ab0f87a23ffd337</string>
 </resources>
