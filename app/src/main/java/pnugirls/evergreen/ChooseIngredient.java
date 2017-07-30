@@ -44,17 +44,27 @@ public class ChooseIngredient {
 
     public ArrayList<Integer> GetIngrediChoose(int[] sym){
         ArrayList<Integer> result= new ArrayList<Integer>();
-        int[] temp= new int[25];
+        int[] temp= new int[25]; int max=-1;
+        int cnt=0;
         for(int i=0; i<25; i++) temp[i]=0;
         for(int i=0; i<sym.length; i++){
             for(int j=0; j<25; j++){
-                if(chart[i][j]==1 && sym[i]==1) temp[j]++;
+                if(chart[i][j]==1 && sym[i]==1){
+                    temp[j]++;
+                    if(temp[i]>max) max=temp[i];
+                }
                 else continue;
             }
         }
-        int max=-1;
-        for(int i=0; i<25; i++){ if(max<temp[i]) max= temp[i];};
-        for(int i=0; i<25; i++){ if(max<=temp[i]) max= temp[i];};
+
+        for(int i=0; i<25; i++) {
+            if (max <= temp[i]) {
+                result.add(i);
+                cnt++;
+                temp[i]=0;
+            }
+        }
+
         return result;
     }
 
