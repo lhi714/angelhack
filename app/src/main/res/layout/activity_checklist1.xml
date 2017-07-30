@@ -2,51 +2,88 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="pnugirls.evergreen.checkList1Activity">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="SELECT your GENDER"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:layout_weight="0.17" />
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/checklist_title_background">
+
+        <TextView
+            android:layout_width="9dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#17791d"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="SELECT your GENDER"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checkedButton="@+id/female"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/female"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="false"
-            android:duplicateParentState="false"
-            android:gravity="center"
-            android:text="FEMALE"
-            android:textSize="20sp" />
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:checkedButton="@+id/male"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
 
         <RadioButton
             android:id="@+id/male"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:checked="true"
+            android:gravity="top|center"
             android:text="MALE"
-            android:textSize="20sp" />
+            android:textSize="25sp"
+            android:onClick="onRadioButtonClicked"/>
 
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="top|center"
+            android:text="FEMALE"
+            android:textSize="25sp"
+            android:onClick="onRadioButtonClicked" />
 
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imageButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/next" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageButton
+            android:id="@+id/nextButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/next_button" />
+
+    </RelativeLayout>
 </LinearLayout>
