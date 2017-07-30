@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "690761310894",
+    "firebase_url": "https://hack-9813e.firebaseio.com",
+    "project_id": "hack-9813e",
+    "storage_bucket": "hack-9813e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690761310894:android:3ab0f87a23ffd337",
+        "android_client_info": {
+          "package_name": "pnugirls.evergreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690761310894-1l22q30poq1qj6h0a0pk6i4odj6qkr16.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pnugirls.evergreen",
+            "certificate_hash": "2ab66b63694377ef6453a6a0069ad794db68aa8c"
+          }
+        },
+        {
+          "client_id": "690761310894-30siqpl7lvqc83rpre3p3p63mt0gvu2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO01VIQH4x7bq5awJ8BEgWjNofyPJRVOs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690761310894-30siqpl7lvqc83rpre3p3p63mt0gvu2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

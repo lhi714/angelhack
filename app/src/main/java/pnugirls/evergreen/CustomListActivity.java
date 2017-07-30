@@ -65,7 +65,7 @@ public class CustomListActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(int i=0; i<4; i++) {
                     for (DataSnapshot messageData : dataSnapshot.getChildren()) {
-                        if (Indigrent[result.get(i)] == messageData.getKey().toString()) {
+                        if (Indigrent[result.get(i)]==messageData.getKey().toString()) {
                             CustomListItem clitems1 = new CustomListItem();
                             clitems1.setIcon(R.drawable.ic_launcher_round);
                             clitems1.setName(messageData.getKey().toString());
