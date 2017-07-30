@@ -29,7 +29,7 @@ public class checkList2Activity extends Activity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(checkList2Activity.this, checkList2Activity.class));
+                startActivity(new Intent(checkList2Activity.this, CustomListActivity.class));
             }
         });
         previousButton.setOnClickListener(new View.OnClickListener() {
