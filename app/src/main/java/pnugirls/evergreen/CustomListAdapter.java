@@ -5,9 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -16,10 +20,10 @@ import java.util.ArrayList;
  */
 
 public class CustomListAdapter extends BaseAdapter {
-    private Context context;
-    public CheckBox checkBox;
+    public Context context;
     private LayoutInflater layoutInflater;
     private ArrayList<CustomListItem> clitems;
+
 
     public CustomListAdapter(Context context, ArrayList<CustomListItem> clitems){
         this.context=context;
@@ -34,7 +38,7 @@ public class CustomListAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return clitems.get(i).getName();
+        return clitems.get(i);
     }
 
     @Override
@@ -59,13 +63,14 @@ public class CustomListAdapter extends BaseAdapter {
         TextView textContents =(TextView)view.findViewById(R.id.clitemText);
         textContents.setText(clitems.get(pos).getContents());
 
-        checkBox=(CheckBox)view.findViewById(R.id.clitemflag);
-        checkBox.setChecked(clitems.get(pos).flag);
+        ImageButton buttonView=(ImageButton)view.findViewById(R.id.cancelImage);
+        buttonView.setImageResource(R.drawable.trashbin);
+        buttonView.setFocusable(false);
+
+
 
         return view;
     }
 
-    public CheckBox getCheckBox(){
-        return this.checkBox;
-    }
+
 }
