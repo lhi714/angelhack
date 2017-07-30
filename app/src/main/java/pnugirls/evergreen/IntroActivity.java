@@ -34,7 +34,7 @@ public class IntroActivity extends AppCompatActivity {
 
         screenManager = new ScreenManager(this);
         if (!screenManager.check()) {
-            goMain();
+            goLoginPage();
             finish();
         }
 
@@ -70,7 +70,7 @@ public class IntroActivity extends AppCompatActivity {
         btn_skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goMain();
+                goLoginPage();
             }
         });
 
@@ -81,7 +81,7 @@ public class IntroActivity extends AppCompatActivity {
                 if(current_p < layouts.length) {
                     viewPager.setCurrentItem(current_p);
                 } else {
-                    goMain();
+                    goLoginPage();
                 }
             }
         });
@@ -118,9 +118,9 @@ public class IntroActivity extends AppCompatActivity {
         }
     }
 
-    private  void goMain() {
+    private  void goLoginPage() {
         screenManager.setFirst(false);
-        startActivity(new Intent(IntroActivity.this, MainActivity.class));
+        startActivity(new Intent(IntroActivity.this, LoginActivity.class));
         finish();
     }
 
