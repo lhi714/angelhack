@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.2"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/checklist_title_background">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,101 +56,109 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="10dp">
-        <RadioButton
-            android:id="@+id/radio1"
+        <CheckBox
+            android:id="@+id/checkbox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Allergies are severe"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio2"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Anemia is severe"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio3"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="I feel fatigue easily"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/radio4"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="I am constipated"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/radio5"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="I have diarrhea"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/radio6"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="I have a bad breath"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio7"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Athlete's foot is severe"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/radio8"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="The skin is rough and the complexion is dark"
-            android:textSize="16sp"/>
-
-        <RadioButton
-            android:id="@+id/radio9"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Eyes are tired"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio10"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Hangover is severe"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio11"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="Heavy cold hands and feet"
-            android:textSize="16sp"/>
-        <RadioButton
-            android:id="@+id/radio12"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/checkbox12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:text="I'm a smoker"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
 
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
+        android:layout_gravity="bottom"
         android:paddingLeft="15dp"
         android:paddingRight="15dp">
 
@@ -158,7 +167,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="10dp"
             android:padding="0sp"
             android:scaleType="centerCrop"
             android:background="@android:color/transparent"
@@ -166,7 +175,7 @@
             android:src="@drawable/previous_button" />
 
         <ImageButton
-            android:id="@+id/nextButton"
+            android:id="@+id/nextButton2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

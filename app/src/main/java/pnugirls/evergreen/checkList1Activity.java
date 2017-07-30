@@ -17,7 +17,7 @@ public class checkList1Activity extends Activity {
     private final int MALE = 1;
     private final int FEMALE = 2;
 
-    private int gender = 1;
+    public static int gender;
 
     public static Activity checkList1;
 
@@ -34,6 +34,9 @@ public class checkList1Activity extends Activity {
                 startActivity(new Intent(checkList1Activity.this, checkList2Activity.class));
             }
         });
+
+        checkList1Activity checkList2 = (checkList1Activity) checkList2Activity.checkList2;
+        checkList2.finish();
 
         checkList1 = checkList1Activity.this;
     }

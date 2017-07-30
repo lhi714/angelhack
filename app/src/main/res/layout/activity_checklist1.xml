@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context="pnugirls.evergreen.checkListActivity">
+    tools:context="pnugirls.evergreen.checkList1Activity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.15">
+        android:layout_weight="0.2"
+        android:background="@drawable/checklist_title_background">
 
         <TextView
             android:layout_width="9dp"
@@ -36,8 +37,8 @@
     <RadioGroup
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_weight="0.75"
-        android:checkedButton="@+id/female"
+        android:layout_weight="0.7"
+        android:checkedButton="@+id/male"
         android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="40dp">
@@ -48,11 +49,11 @@
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
-            android:checked="false"
-            android:duplicateParentState="false"
+            android:checked="true"
             android:gravity="top|center"
             android:text="MALE"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:id="@+id/female"
@@ -60,8 +61,8 @@
             android:layout_height="30dp"
             android:gravity="top|center"
             android:text="FEMALE"
-            android:textSize="25sp" />
-
+            android:textSize="25sp"
+            android:onClick="onRadioButtonClicked" />
 
     </RadioGroup>
 
@@ -73,23 +74,11 @@
         android:paddingRight="15dp">
 
         <ImageButton
-            android:id="@+id/previousButton"
+            android:id="@+id/nextButton1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="15dp"
-            android:padding="0sp"
-            android:scaleType="centerCrop"
-            android:background="@android:color/transparent"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/previous_button" />
-
-        <ImageButton
-            android:id="@+id/nextButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="10dp"
             android:padding="0sp"
             android:scaleType="centerCrop"
             android:background="@android:color/transparent"
